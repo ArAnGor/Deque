@@ -1,6 +1,7 @@
 set(target ${MP2_LIBRARY})
 
-file(GLOB header_files "*.h*")
+file(GLOB header_files "*.h*" "${MP2_INCLUDE}/*.h*")
 file(GLOB source_files "*.cpp")
 
-add_executable(${target} ${source_files} ${header_files})
+add_library(${target} STATIC ${source_files} ${header_files})
+target_link_libraries(${target} ${LIBRARY_DEPS})
