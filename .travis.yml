@@ -8,7 +8,6 @@ before_script:
 script:
   - cmake ../Deque
   - make -j
-  - cd ./bin/
-  - ./test_Deque
+  - ./bin/test_Deque
 notifications:
   email: false
