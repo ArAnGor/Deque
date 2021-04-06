@@ -1,4 +1,4 @@
-#pragma once
+๏ปฟ#pragma once
 #include <iostream>
 using namespace std;
 
@@ -7,15 +7,15 @@ class Deque
 {
 private:
 
-  template <class ั>
+  template <class ะก>
   class ListElem
   {
   public:
-    ListElem<ั> *prev;
-    ั data;
-    ListElem<ั> *next;
+    ListElem<ะก> *prev;
+    ะก data;
+    ListElem<ะก> *next;
 
-    ListElem(ListElem<ั> *p, ั &d, ListElem<ั> *n) { prev = p; data = d; next = n; }
+    ListElem(ListElem<ะก> *p, ะก &d, ListElem<ะก> *n) { prev = p; data = d; next = n; }
     ~ListElem() {}
   };
 
