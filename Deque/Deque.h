@@ -7,15 +7,15 @@ class Deque
 {
 private:
 
-  template <class С>
+  template <class C>
   class ListElem
   {
   public:
-    ListElem<С> *prev;
-    С data;
-    ListElem<С> *next;
+    ListElem<C> *prev;
+    C data;
+    ListElem<C> *next;
 
-    ListElem(ListElem<С> *p, С &d, ListElem<С> *n) { prev = p; data = d; next = n; }
+    ListElem(ListElem<C> *p, C &d, ListElem<C> *n) { prev = p; data = d; next = n; }
     ~ListElem() {}
   };
 
